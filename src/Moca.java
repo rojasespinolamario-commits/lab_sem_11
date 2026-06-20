@@ -1,2 +1,16 @@
-public class Moca {
+public class Moca extends Complemento {
+
+    Cafe bebida;
+
+    public Moca(Cafe bebida) {
+        this.bebida = bebida;
+    }
+
+    public String getDescripcion() {
+        return bebida.getDescripcion() + ", Moca";
+    }
+
+    public double costo() {
+        return .20 + bebida.costo();
+    }
 }
