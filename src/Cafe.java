@@ -1,6 +1,6 @@
 public abstract class Cafe {
 
-    String descripcion = "Bedida desconocida";
+    String descripcion = "";
 
     public String getDescripcion() {
         return descripcion;
