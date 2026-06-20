@@ -1,2 +1,11 @@
-public class Descafeinado {
+public class Descafeinado extends Cafe {
+
+    public Descafeinado () {
+        descripcion = "Descafeinado";
+    }
+
+    public double costo() {
+        return 1.05;
+    }
+
 }
