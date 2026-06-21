@@ -1,43 +1,45 @@
-public static void main(String[] args) {
+public class Main {
+    public static void main(String[] args) {
 
-    System.out.println("Bienvenido a la Cafeteria");
-    System.out.println();
+        System.out.println("Bienvenido a la Cafeteria");
+        System.out.println();
 
-    Cafe bebida = new Expreso();
+        Cafe bebida = new Expreso();
 
-    bebida = new Leche(bebida);
-    bebida = new Soya(bebida);
-    bebida = new Crema(bebida);
-    bebida = new Moca(bebida);
-    System.out.println(bebida.getDescripcion() + "\nTotal: $" + bebida.costo());
+        bebida = new Leche(bebida);
+        bebida = new Soya(bebida);
+        bebida = new Crema(bebida);
+        bebida = new Moca(bebida);
+        System.out.println(bebida.getDescripcion() + "\nTotal: $" + bebida.costo());
 
-    Cafe bebida2 = new Descafeinado();
+        Cafe bebida2 = new Descafeinado();
 
-    bebida2 = new Moca(bebida2);
-    bebida2 = new Moca(bebida2);
-    bebida2 = new Soya(bebida2);
-    bebida2 = new Leche(bebida2);
-    System.out.println(bebida.getDescripcion() + "\nTotal: $" + bebida2.costo());
+        bebida2 = new Moca(bebida2);
+        bebida2 = new Moca(bebida2);
+        bebida2 = new Soya(bebida2);
+        bebida2 = new Leche(bebida2);
+        System.out.println(bebida2.getDescripcion() + "\nTotal: $" + bebida2.costo());
 
-    Cafe bebida3 = new Batido();
+        Cafe bebida3 = new Batido();
 
-    bebida3 = new Crema(bebida3);
-    bebida3 = new Crema(bebida3);
-    bebida3 = new Leche(bebida3);
-    bebida3 = new Leche(bebida3);
-    bebida3 = new Soya(bebida3);
-    bebida3 = new Soya(bebida3);
-    bebida3 = new Moca(bebida3);
-    bebida3 = new Moca(bebida3);
-    System.out.println(bebida.getDescripcion() + "\nTotal: $" + bebida3.costo());
+        bebida3 = new Crema(bebida3);
+        bebida3 = new Crema(bebida3);
+        bebida3 = new Leche(bebida3);
+        bebida3 = new Leche(bebida3);
+        bebida3 = new Soya(bebida3);
+        bebida3 = new Soya(bebida3);
+        bebida3 = new Moca(bebida3);
+        bebida3 = new Moca(bebida3);
+        System.out.println(bebida3.getDescripcion() + "\nTotal: $" + bebida3.costo());
 
-    Cafe bebida4 = new TostadoNegro();
+        Cafe bebida4 = new TostadoNegro();
 
-    bebida4 = new Crema(bebida4);
-    bebida4 = new Crema(bebida4);
-    bebida4 = new Soya(bebida4);
-    bebida4 = new Soya(bebida4);
-    bebida4 = new Soya(bebida4);
-    System.out.println(bebida.getDescripcion() + "\nTotal: $" + bebida4.costo());
+        bebida4 = new Crema(bebida4);
+        bebida4 = new Crema(bebida4);
+        bebida4 = new Soya(bebida4);
+        bebida4 = new Soya(bebida4);
+        bebida4 = new Soya(bebida4);
+        System.out.println(bebida4.getDescripcion() + "\nTotal: $" + bebida4.costo());
 
+    }
 }
